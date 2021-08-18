@@ -8,6 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import useSiteMetadata from "../hooks/useSiteMetadata"
+
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -26,9 +28,14 @@ const Bio = () => {
     }
   `)
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
+
+  // hooksから取得するように書き換えた
+  const { author, social } = useSiteMetadata()
+
+  /*
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+  */
 
   return (
     <div className="bio">
@@ -46,7 +53,7 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+          <a href={social?.twitter}>
             You should follow them on Twitter
           </a>
         </p>

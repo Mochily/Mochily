@@ -1,16 +1,58 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    // サイト主要情報
+    title: `Mochily`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Mochily Official HP`,
+      summary: `エンジニアリングを楽しむMochily集団`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `未明`,
+    siteUrl: `https://mochily.com`,
+
+    // SNS
     social: {
-      twitter: `kylemathews`,
+      // Todo まだ追加してない
+      twitter: "https://twitter.com",
+      github: "https://github.com",
+      instagram: "https://instagram.com",
     },
+
+    // ヘッダー
+    headerMenu: [
+      {
+        name: 'ホーム',
+        slug: '/'
+      },
+
+      {
+        name: 'このサイトについて',
+        slug: '/about'
+      },
+      {
+        name: '問い合わせ',
+        slug: '/contact'
+      },
+    ],
+
+    // フッター
+    footerMenu: [
+      {
+        name: 'このサイトについて',
+        slug: '/about'
+      },
+      {
+        name: '運営者について',
+        slug: '/authors'
+      },
+      {
+        name: 'お問い合わせ',
+        slug: '/contact'
+      },
+    ]
   },
+
+
+
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
