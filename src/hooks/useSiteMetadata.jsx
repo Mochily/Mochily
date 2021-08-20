@@ -14,6 +14,7 @@ const siteMetadataQuery =
           siteMetadata {
             title
             siteUrl
+            description
             author {
               name
               summary
