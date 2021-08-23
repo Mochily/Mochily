@@ -22,7 +22,9 @@ export const Header = props => {
           Mochily
         </Link>
       </div>
-      <ul className={styles.ul}>{menu}</ul>
+      <nav>
+        <ul className={styles.ul}>{menu}</ul>
+      </nav>
     </header>
   )
 }
