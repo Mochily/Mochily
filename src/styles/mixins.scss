@@ -1,0 +1,16 @@
+// font
+@mixin text-xl {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@mixin text-lg {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+@mixin text-base {
+  font-weight: 500;
+  font-size: 18px;
+}
+

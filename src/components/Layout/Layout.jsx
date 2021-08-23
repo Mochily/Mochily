@@ -1,11 +1,11 @@
 import React from "react"
-import HeaderBar from "../Header/HeaderBar.jsx"
-import SEO from "../SEO/SEO.jsx"
+import { Header } from "../Header/Header"
+import SEO from "../SEO/SEO"
 
 const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper">
-      <HeaderBar />
+      <Header />
       <SEO title={title} />
       <main>{children}</main>
     </div>

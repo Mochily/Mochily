@@ -2,6 +2,9 @@
 import "typeface-montserrat"
 import "typeface-merriweather"
 
+// global style
+import "./src/styles/global.scss"
+
 // normalize CSS across browsers
 // import "./src/styles/normalize.css"
 

@@ -20,38 +20,40 @@ module.exports = {
     // ヘッダー
     headerMenu: [
       {
-        name: 'ホーム',
-        slug: '/'
+        name: "Member",
+        slug: "/member",
       },
 
       {
-        name: 'このサイトについて',
-        slug: '/about'
+        name: "Products",
+        slug: "/about",
       },
       {
-        name: '問い合わせ',
-        slug: '/contact'
+        name: "Contact",
+        slug: "/contact",
+      },
+      {
+        name: "Blog",
+        slug: "/",
       },
     ],
 
     // フッター
     footerMenu: [
       {
-        name: 'このサイトについて',
-        slug: '/about'
+        name: "このサイトについて",
+        slug: "/about",
       },
       {
-        name: '運営者について',
-        slug: '/authors'
+        name: "運営者について",
+        slug: "/authors",
       },
       {
-        name: 'お問い合わせ',
-        slug: '/contact'
+        name: "お問い合わせ",
+        slug: "/contact",
       },
-    ]
+    ],
   },
-
-
 
   plugins: [
     `gatsby-plugin-sass`,
