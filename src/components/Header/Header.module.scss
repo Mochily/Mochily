@@ -24,4 +24,7 @@
 .li {
   @include text-lg;
   padding: 15px 33px;
+  a {
+    color: black;
+  }
 }

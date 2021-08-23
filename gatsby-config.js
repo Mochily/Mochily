@@ -41,16 +41,20 @@ module.exports = {
     // フッター
     footerMenu: [
       {
-        name: "このサイトについて",
+        name: "サイトマップ",
         slug: "/about",
-      },
-      {
-        name: "運営者について",
-        slug: "/authors",
       },
       {
         name: "お問い合わせ",
         slug: "/contact",
+      },
+      {
+        name: "サイトご利用規約",
+        slug: "/",
+      },
+      {
+        name: "プライバシーポリシー",
+        slug: "/",
       },
     ],
   },
