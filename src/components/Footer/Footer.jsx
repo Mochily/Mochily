@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 import * as styles from "./Footer.module.scss"
 
-export const Footer = props => {
+const Footer = props => {
   const { footerMenu } = useSiteMetadata()
 
   const menu = footerMenu.map(item => {
@@ -24,3 +24,5 @@ export const Footer = props => {
     </footer>
   )
 }
+
+export default Footer

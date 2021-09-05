@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 import * as styles from "./Header.module.scss"
 
-export const Header = props => {
+const Header = props => {
   const { headerMenu } = useSiteMetadata()
 
   const menu = headerMenu.map(item => {
@@ -28,3 +28,5 @@ export const Header = props => {
     </header>
   )
 }
+
+export default Header
