@@ -6,3 +6,10 @@
 $color-font: #000;
 $color-accent: #FF9D43;
 $color-background: #fff;
+
+// breakpoints
+$breakpoints: (
+  'sm': 'screen and (max-width: 475px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1024px)',
+) !default;

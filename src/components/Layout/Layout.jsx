@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
         description="こんちゃすです"
       />
       <AppE />
-      <AppO 
+      <AppO
         appName="App"
         catchCopy="にゃんにゃんにゃんす"
         description="ニャンころ餅ですどうもです"
@@ -26,4 +26,4 @@ const Layout = ({ location, title, children }) => {
     </div>
   )
 }
-export default Layout;
+export default Layout
