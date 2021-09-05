@@ -4,8 +4,8 @@ import Layout from "../components/Layout/Layout"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
 const Index = ({ data, location }) => {
-  const { siteTitle } = useSiteMetadata
-  return <Layout location={location} title={siteTitle}></Layout>
+  const { title } = useSiteMetadata
+  return <Layout location={location} title={title}></Layout>
 }
 
 export default Index

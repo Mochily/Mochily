@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Meiryo",
+    "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+  font-size: 16px;
+}
+
+p {
+  margin:0px;
+}
+
+.icon {
+  width:100px;
+  height: 100px;
+}
+
+.catchCopy {
+  color: #ff8d2f;
+  font-weight: 600;
+}
+
+h1 {
+  margin:0px 0px 8px 0px;
+  font-size: 36px;
+}
+
+.mock {
+  width: 400px;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.left {
+  width: 600px;
+}
+.description {
+  width: 350px;
+  min-height: 6rem;
+}
+
+
