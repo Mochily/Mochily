@@ -1,9 +1,13 @@
 @import "../../styles/assets.scss";
 
 .heading {
+  position: absolute;
+  width: 100%;
+  top: 0px;
   background-color: black;
   text-align: center;
   padding: 8px 0 4px 0;
+  z-index: 998;
 }
 
 .link {
@@ -11,11 +15,12 @@
   @include text-xl;
 }
 
-.nav {
-  background-color: $color-background;
-}
-
 .ul {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  background-color: rgba(255, 255, 255, 0.442);
+  z-index: 998;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +29,7 @@
 .li {
   @include text-lg;
   padding: 15px 33px;
+  
   a {
     color: black;
   }

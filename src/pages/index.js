@@ -5,12 +5,14 @@ import useSiteMetadata from "../hooks/useSiteMetadata"
 
 import App from "../components/App/App"
 import Products from "../components/App/Products"
+import Main from "../components/Main/Main"
 import Container from "../components/Container/Container"
 
 const Index = ({ data, location }) => {
   const { title } = useSiteMetadata
   return (
     <Layout location={location} title={title}>
+      <Main />
       <Container>
         <Products />
         <App flug={true} 

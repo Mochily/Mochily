@@ -1,0 +1,15 @@
+@import "../../styles/assets.scss";
+
+img {
+  width:100%;
+  margin: 0;
+
+}
+
+.wrapper {
+  width:100%;
+  position: absolute;
+  z-index: 300;
+  top: -60px;
+  left: 0px;
+}

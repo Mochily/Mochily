@@ -22,7 +22,7 @@ const Header = props => {
           Mochily
         </Link>
       </div>
-      <nav>
+      <nav className={styles.nav}>
         <ul className={styles.ul}>{menu}</ul>
       </nav>
     </header>
