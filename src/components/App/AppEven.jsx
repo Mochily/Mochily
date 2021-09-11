@@ -4,7 +4,7 @@ import Src2 from "../../images/mock.png"
 import Button from "../Button/Button.jsx"
 import * as styles from "./AppListEven.module.scss"
 
-const AppEven = () => {
+const AppEven = ({ iconImg, appName, catchCopy, description, mockImg }) => {
   return (
     <div className={styles.wrapper}>
       <main className={styles.center}>
@@ -15,12 +15,10 @@ const AppEven = () => {
           <div className={styles.right}>
             <img src={Src} alt="img" className={styles.icon} />
             <p>
-              <span className={styles.catchCopy}>test1</span>
+              <span className={styles.catchCopy}>{catchCopy}</span>
             </p>
-            <h1 className={styles.appName}>Application</h1>
-            <p className={styles.description}>
-              これは、時間割アプリです。これは、時間割アプリです。これは、時間割アプリです。これは、時間割アプリです。これは、時間割アプリです。これは、時間割アプリです。
-            </p>
+            <h1 className={styles.appName}>{appName}</h1>
+            <p className={styles.description}>{description}</p>
             <Button url="/" />
           </div>
         </section>

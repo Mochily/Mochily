@@ -3,8 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
-import AppO from "../components/App/AppOdd"
-import AppE from "../components/App/AppEven"
+import App from "../components/App/App"
 import Container from "../components/Container/Container"
 
 const Index = ({ data, location }) => {
@@ -12,17 +11,14 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={title}>
       <Container>
-        <AppO
-          appName="App"
-          catchCopy="にゃんにゃんす"
-          description="こんちゃすです"
-        />
-        <AppE />
-        <AppO
-          appName="App"
-          catchCopy="にゃんにゃんにゃんす"
-          description="ニャンころ餅ですどうもです"
-        />
+        <App flug={true} 
+        appName="にゃんころ１" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
+        <App flug={false} 
+        appName="にゃんころ２" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
+        <App flug={true} 
+        appName="にゃんころ３" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
+        <App flug={false} 
+        appName="にゃんころ４" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
       </Container>
     </Layout>
   )
