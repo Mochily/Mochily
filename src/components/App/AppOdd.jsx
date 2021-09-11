@@ -4,6 +4,7 @@ import Src2 from "../../images/mock.png"
 import Button from "../Button/Button.jsx"
 import * as styles from "./AppListOdd.module.scss"
 
+//奇数個目のアプリを表示する
 const AppOdd = ({ iconImg, appName, catchCopy, description, mockImg }) => {
   return (
     <div className={styles.wrapper}>
