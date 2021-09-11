@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
 import App from "../components/App/App"
+import Products from "../components/App/Products"
 import Container from "../components/Container/Container"
 
 const Index = ({ data, location }) => {
@@ -11,6 +12,7 @@ const Index = ({ data, location }) => {
   return (
     <Layout location={location} title={title}>
       <Container>
+        <Products />
         <App flug={true} 
         appName="にゃんころ１" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
         <App flug={false} 
