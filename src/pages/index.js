@@ -15,14 +15,30 @@ const Index = ({ data, location }) => {
       <Main />
       <Container>
         <Products />
-        <App flug={true} 
-        appName="にゃんころ１" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
-        <App flug={false} 
-        appName="にゃんころ２" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
-        <App flug={true} 
-        appName="にゃんころ３" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
-        <App flug={false} 
-        appName="にゃんころ４" catchCopy="ぽんぽこぽんぽこですよ" description="テキストだお"/>
+        <App
+          flug={true}
+          appName="にゃんころ１"
+          catchCopy="ぽんぽこぽんぽこですよ"
+          description="テキストだお"
+        />
+        <App
+          flug={false}
+          appName="にゃんころ２"
+          catchCopy="ぽんぽこぽんぽこですよ"
+          description="テキストだお"
+        />
+        <App
+          flug={true}
+          appName="にゃんころ３"
+          catchCopy="ぽんぽこぽんぽこですよ"
+          description="テキストだお"
+        />
+        <App
+          flug={false}
+          appName="にゃんころ４"
+          catchCopy="ぽんぽこぽんぽこですよ"
+          description="テキストだお"
+        />
       </Container>
     </Layout>
   )
