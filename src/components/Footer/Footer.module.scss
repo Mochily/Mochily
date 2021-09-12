@@ -9,13 +9,11 @@
 
 .copy {
   color: white;
-  @include text-base;
 }
 
 .ul {
   display: flex;
   align-items: center;
-  @include text-base;
   .li {
     padding: 5px 20px;
     a {

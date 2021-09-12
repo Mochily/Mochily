@@ -1,4 +1,28 @@
+@import "typography.scss";
+
 // global css
 body {
-  font-family: "Volte", sans-serif;
+  font-family: "Volte", "M PLUS 1p", sans-serif;
+}
+
+// にじみ防止
+// https://mym0978.com/blog/webfont
+body p,
+body span,
+body dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea,
+a {
+  transform: rotate(0.03deg);
+  -moz-transform: rotate(0.03deg);
+  -ms-transform: rotate(0.03deg);
+  -o-transform: rotate(0.03deg);
+  -webkit-transform: rotate(0.03deg);
 }

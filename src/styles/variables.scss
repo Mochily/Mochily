@@ -14,3 +14,9 @@ $breakpoints: (
   'lg': 'screen and (max-width: 1024px)',
   'xl': 'screen and (max-width: 1200px)',
 ) !default;
+
+// font size
+$text-base: 16px;
+$text-lg: 18px;
+$text-xl: 20px;
+$text-2xl: 36px;
