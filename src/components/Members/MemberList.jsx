@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "./Members.module.scss"
+import * as styles from "./MemberList.module.scss"
 
 import MemberCard from "./MemberCard"
 import Container from "../Container/Container"
@@ -40,7 +40,7 @@ const membersInfo = [
   },
 ]
 
-const Members = () => {
+const MemberList = () => {
   return (
     <Container>
       <div className={styles.cards}>
@@ -61,4 +61,4 @@ const Members = () => {
   )
 }
 
-export default Members
+export default MemberList

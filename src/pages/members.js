@@ -1,11 +1,11 @@
 import React from "react"
 
-import Members from "../components/Members/Members"
+import MemberList from "../components/Members/MemberList"
 
 const MembersPage = () => {
   return (
     <div>
-      <Members />
+      <MemberList />
     </div>
   )
 }
