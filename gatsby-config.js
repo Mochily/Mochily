@@ -20,8 +20,8 @@ module.exports = {
     // ヘッダー
     headerMenu: [
       {
-        name: "Member",
-        slug: "/member",
+        name: "Members",
+        slug: "/members",
       },
 
       {
