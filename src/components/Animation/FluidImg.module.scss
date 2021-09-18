@@ -1,0 +1,36 @@
+@import "../../styles/assets.scss";
+
+.fluidpic {
+
+  position: absolute;
+  left: -30vh;
+  width:130vh;/*横幅*/
+  height: 100vh;/*縦幅*/
+  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+}
+
+@keyframes fluidrotate {  
+    
+0%, 100% {
+    border-radius: 36% 64% 20% 80% / 45% 63% 37% 55%;
+}
+14% {
+    border-radius: 69% 31% 48% 52% / 45% 30% 70% 55%;
+}
+28% {
+    border-radius: 34% 66% 25% 75% / 31% 53% 47% 69%;
+}
+42% {
+    border-radius: 40% 60% 69% 31% / 46% 53% 47% 54%;
+}
+56% {
+    border-radius: 64% 36% 69% 31% / 76% 30% 70% 24%;
+}
+70% {
+    border-radius: 55% 45% 24% 76% / 42% 43% 57% 58%;
+}
+84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+}
+    
+}

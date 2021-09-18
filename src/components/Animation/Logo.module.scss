@@ -1,0 +1,12 @@
+@import "../../styles/assets.scss";
+
+.logo {
+  position: absolute;
+  z-index: 999;
+  top: 480px;
+  left: 900px;
+  font-size: 80px;
+  color: white;
+  background-color: black;
+  mix-blend-mode: exclusion;
+}
