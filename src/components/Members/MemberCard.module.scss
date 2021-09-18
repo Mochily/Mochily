@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include mq(lg) {
+    max-width: 120px;
+  }
 }
 
 
@@ -14,17 +17,27 @@
   background-color: #ECECEC;
   border-radius: 50%;
   margin-bottom: 34px;
+  @include mq(lg) {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .name {
   margin-bottom: 14px;
   h2 {
     font-size: $text-lg;
-    font-weight: normal;
+    font-weight: 400;
+    @include mq(lg) {
+      font-size: $text-base;
+    }
   }
   p {
     text-align: center;
     color: #939393;
+    @include mq(lg) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -34,5 +47,8 @@
     color: #000;
     font-weight: 400;
     font-size: $text-lg;
+    @include mq(lg) {
+      font-size: $text-base;
+    }
   }
 }

@@ -46,9 +46,8 @@ const MemberList = () => {
       <div className={styles.cards}>
         {membersInfo.map((member, index) => {
           return (
-            <div className={styles.cardContainer}>
+            <div key={index} className={styles.cardContainer}>
               <MemberCard
-                key={index}
                 name={member.name}
                 position={member.position}
                 sns={member.sns}
