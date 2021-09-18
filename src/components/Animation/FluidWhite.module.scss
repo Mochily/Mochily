@@ -1,0 +1,105 @@
+@import "../../styles/assets.scss";
+
+//あとでフォントサイズチェック
+.fluidwhite {
+  font-size: 72px;
+  position: absolute;
+  z-index: 998;
+  top: 16vh;
+  right: 10vw;
+  width: 34vw;
+  height: 32vw;
+  background-color:rgba(255, 255, 255, 0);
+  color: black;
+  border: solid 1px #444;
+  animation: fluidrotate 30s ease 0s infinite;
+  @include mq(lg){
+    font-size: 56px;
+  }
+  @include mq(md){
+    font-size: 35px
+  }
+}
+
+.m, .o, .c, .h, .i, .l, .y{
+  position: absolute;
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+.m{
+  color: #ff8c49;
+  top: 12vw;
+  left: 5vw;;
+}
+
+.o{
+  top: 12vw;
+  left: 17vw;
+}
+
+.c{
+  top: 20vw;
+  left: 7vw;
+}
+
+.h{
+  top: 15vw;
+  left: 26vw;
+}
+
+.i{
+  top: 4vw;
+  left: 13vw;
+}
+.y{
+  top: 4vw;
+  left: 23vw;
+}
+
+.l{
+  top: 21vw;
+  left: 17vw;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-10deg);
+  }
+  50% {
+    transform:translate(0, -10px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(10deg);
+  }
+}
+ 
+
+@keyframes fluidrotate {  
+    
+0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+}
+14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+}
+28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+}
+    
+}

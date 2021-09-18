@@ -2,7 +2,6 @@ import React from "react"
 import AppEven from "../App/AppEven"
 import AppOdd from "../App/AppOdd"
 
-
 //プロダクトの表示をする
 //flugがtrueで奇数個目のアプリとし、左右の画像のレイアウトを入れ替える
 const App = ( {flug, appName, catchCopy, description, iconImg} ) => {

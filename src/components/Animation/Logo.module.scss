@@ -3,10 +3,17 @@
 .logo {
   position: absolute;
   z-index: 999;
-  top: 480px;
-  left: 900px;
+  top: 30vw;
+  left: 65vw;
   font-size: 80px;
   color: white;
   background-color: black;
+  //これで反転
   mix-blend-mode: exclusion;
+  @include mq(lg){
+    font-size: 64px;
+  }
+  @include mq(md){
+    font-size: 48px;
+  }
 }

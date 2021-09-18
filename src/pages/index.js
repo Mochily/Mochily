@@ -3,12 +3,15 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
+
 import App from "../components/App/App"
+
 import AppOdd from "../components/App/AppOdd"
 import Products from "../components/App/Products"
 import Main from "../components/Main/Main"
 import Container from "../components/Container/Container"
 import Fluid from "../components/Animation/Fluid"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Index = ({ data, location }) => {
   const { title } = useSiteMetadata
@@ -19,6 +22,7 @@ const Index = ({ data, location }) => {
       <Main />
       <Container>
         <Products />
+
         <App
           flug={true}
           iconImg ="../../images/icon.png"

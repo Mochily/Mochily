@@ -1,19 +1,25 @@
 @import "../../styles/assets.scss";
 
+//必ずvwの単位でよろしくです
 .fluid {
   position: absolute;
   z-index: 998;
   top: 10vh;
-  right: -30vh;
-  width:100vh;/*横幅*/
-  height: 80vh;/*縦幅*/
-  background-color:black;/*背景色*/
+  right: -20vw;
+  //横幅
+  width: 48vw;
+  //縦幅
+  height: 40vw;
+  //背景色
+  background-color:black;
   color: black;
-  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  animation: fluidrotate 30s ease 0s infinite;
 }
 
+//流体シェイプアニメーション
 @keyframes fluidrotate {  
-    
+//編集するときは下記URLで
+//https://9elements.github.io/fancy-border-radius/#42.55.43.44--280.361
 0%, 100% {
     border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
 }

@@ -1,14 +1,17 @@
 @import "../../styles/assets.scss";
 
+//vwの単位で
 .fluidMin {
   position: absolute;
-  z-index: 999;
-  top: 40px;
-  left: 500px;
-  width:20vh;/*横幅*/
-  height: 20vh;/*縦幅*/
-  background:rgb(255, 140, 73);/*背景色*/
-  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  top: 21vw;
+  left: 13vw;
+  //横幅
+  width:17vw;
+  //縦幅
+  height: 17vw;
+  //背景色
+  background:#ff8c49;
+  animation: fluidrotate 30s ease 0s infinite;
 }
 
 @keyframes fluidrotate {  

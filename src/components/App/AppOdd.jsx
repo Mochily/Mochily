@@ -2,22 +2,23 @@ import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { graphql } from "gatsby";
+import Src from "../../images/icon.png"
 import Src2 from "../../images/mock.png"
 import Button from "../Button/Button.jsx"
-import * as styles from "./AppListOdd.module.scss"
+import * as styles from "./AppOdd.module.scss"
 
 
 
 
 //奇数個目のアプリを表示する
-const AppOdd = ({ iconImg, appName, catchCopy, description, mockImg }) => {
+const AppOdd = ({ iconImg, appName, catchCopy, description}) => {
   console.log(iconImg);
   return (
     <div className={styles.wrapper}>
       <main className={styles.center}>
         <section className={styles.flex}>
           <div className={styles.left}>
-
+          <img src={Src} alt="img" className={styles.icon} />
             <p>
               <span className={styles.catchCopy}>{catchCopy}</span>
             </p>

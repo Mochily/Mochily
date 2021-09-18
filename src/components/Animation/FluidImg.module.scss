@@ -1,12 +1,16 @@
 @import "../../styles/assets.scss";
 
+//必ずvwの単位で
 .fluidpic {
-
   position: absolute;
-  left: -30vh;
-  width:130vh;/*横幅*/
-  height: 100vh;/*縦幅*/
-  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  top: 5vh;
+  left: -30vw;
+  //横幅
+  width: 77vw;
+  //縦幅
+  height: 50vw;
+  max-height: 100vh;
+  animation: fluidrotate 30s ease 0s infinite;
 }
 
 @keyframes fluidrotate {  

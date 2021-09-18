@@ -1,13 +1,21 @@
 @import "../../styles/assets.scss";
 
 .title {
-  font-size: 6rem;
+  font-size: 72px;
+  font-weight: normal;
   margin-bottom: 0;
+  @include mq(lg){
+    font-size: 64px;
+  }
+  @include mq(md){
+    font-size: 48px;
+  }
 }
 .wrapper {
-  margin: 65% 20px 90px 20px;
+  margin: 64vw 20px 10vw 20px;
 }
 
 .subtitle {
+  font-size: $text-base;
   margin: 0px 0px 0px 5px;
 }

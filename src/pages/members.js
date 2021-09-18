@@ -1,11 +1,18 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
+import useSiteMetadata from "../hooks/useSiteMetadata"
 
 import MemberList from "../components/Members/MemberList"
+import SubMain from "../components/Main/SubMain"
 
-const MembersPage = () => {
+const MembersPage = ({ data, location }) => {
+  const { title } = useSiteMetadata
   return (
     <div>
-      <MemberList />
+      <Layout location={location} title={title}>
+        <SubMain text="Members" subtext="メンバー紹介"/>
+        <MemberList />
+      </Layout>
     </div>
   )
 }
