@@ -24,7 +24,7 @@ const AppOdd = ({ iconImg, appName, catchCopy, description}) => {
             </p>
             <h1 className={styles.appName}>{appName}</h1>
             <p className={styles.description}>{description}</p>
-            <Button url="/" />
+            <Button url="/"/>
           </div>
           <div className={styles.right}>
             <img src={Src2} alt="img" className={styles.mock} />

@@ -4,6 +4,7 @@
 .fluid {
   position: absolute;
   z-index: 998;
+  overflow-x: hidden;
   top: 10vh;
   right: -20vw;
   //横幅
@@ -14,6 +15,9 @@
   background-color:black;
   color: black;
   animation: fluidrotate 30s ease 0s infinite;
+  @include mq(sm){
+    display: none;
+  }
 }
 
 //流体シェイプアニメーション

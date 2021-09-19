@@ -15,7 +15,7 @@ html {
 .btn,
 a.btn,
 button.btn {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   position: relative;
   display: inline-block;
@@ -33,7 +33,6 @@ button.btn {
   letter-spacing: 0.1em;
   color: #444444;
   border-radius: 0.5rem;
-
 }
 
 a.btnflat {
@@ -48,6 +47,16 @@ a.btnflat {
   @include mq(md){
     padding: 0.7rem 2rem;
   }
+  @include mq(sm){
+   padding: 0;
+   color: #444; 
+   font-size: normal;
+   background-color: transparent;
+  }
+}
+
+a.btnflat:visited{
+  color: #ff8d2f;
 }
 
 a.btnflat span {
@@ -66,6 +75,9 @@ a.btnflat:before {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   background: #ff8d2f;
+  @include mq(sm){
+    display: none;
+  }
 }
 
 a.btnflat:hover:before {

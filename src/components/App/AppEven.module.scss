@@ -48,15 +48,16 @@ h1 {
   }
 }
 .description {
-  text-align: right;
   width: 400px;
-  margin-left: auto;
+  margin-left: 0;
   min-height: 8rem;
   @include mq(lg){
     min-height: 4rem;
+    width: 50vw;
   }
   @include mq(md){
     max-height: 3rem;
+    width: 40vw;
   }
 }
 

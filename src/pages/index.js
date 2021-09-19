@@ -22,7 +22,6 @@ const Index = ({ data, location }) => {
       <Main />
       <Container>
         <Products />
-
         <App
           flug={true}
           iconImg ="../../images/icon.png"

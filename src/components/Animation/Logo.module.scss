@@ -6,6 +6,7 @@
   top: 30vw;
   left: 65vw;
   font-size: 80px;
+  font-weight: normal;
   color: white;
   background-color: black;
   //これで反転
@@ -15,5 +16,10 @@
   }
   @include mq(md){
     font-size: 48px;
+    top: 60vw;
+    left: 53vw;
+    color: #444;
+    mix-blend-mode: normal;
+    background-color: transparent;
   }
 }
