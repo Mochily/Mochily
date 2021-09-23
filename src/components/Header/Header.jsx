@@ -3,29 +3,18 @@ import { Link } from "gatsby"
 import useSiteMetadata from "../../hooks/useSiteMetadata"
 import * as styles from "./Header.module.scss"
 
-const Header = props => {
-  const { headerMenu } = useSiteMetadata()
+import Navbar from "../Header/Navbar/Navbar"
 
-  const menu = headerMenu.map(item => {
-    const page_link = item.slug
-    return (
-      <li className={styles.li} key={page_link}>
-        <Link to={page_link}>{item.name}</Link>
-      </li>
-    )
-  })
-
+const Header = () => {
   return (
-    <header className={styles.header}>
+    <div>
       <div className={styles.heading}>
         <Link to="/" className={styles.link}>
           Mochily
         </Link>
       </div>
-      <nav className={styles.nav}>
-        <ul className={styles.ul}>{menu}</ul>
-      </nav>
-    </header>
+      <Navbar />
+    </div>
   )
 }
 

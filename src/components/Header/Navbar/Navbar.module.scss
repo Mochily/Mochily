@@ -1,0 +1,43 @@
+@import "../../../styles/assets.scss";
+
+.navigation {
+  height: 56px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5vw;
+  z-index: 2;
+  @include mq(md) {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.link {
+  font-size: $text-2xl;
+  color: black;
+  text-align: center;
+  display: none !important;
+  @include mq(md) {
+    display: block !important;
+    text-align: center;
+  }
+}
+
+.toggle {
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10vw;
+  @include mq(md) {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+}

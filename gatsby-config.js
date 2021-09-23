@@ -20,20 +20,23 @@ module.exports = {
     // ヘッダー
     headerMenu: [
       {
-        name: "Members",
-        slug: "/members",
-      },
-
-      {
         name: "Products",
+        description: "これまでの制作物",
         slug: "/about",
       },
       {
+        name: "Members",
+        description: "メンバー紹介",
+        slug: "/members",
+      },
+      {
         name: "Contact",
+        description: "お問い合わせ",
         slug: "/contact",
       },
       {
         name: "Blog",
+        description: "ブログ",
         slug: "/",
       },
     ],
