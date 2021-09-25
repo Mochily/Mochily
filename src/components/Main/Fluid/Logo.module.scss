@@ -1,4 +1,4 @@
-@import "../../styles/assets.scss";
+@import "../../../styles/assets.scss";
 
 .logo {
   position: absolute;
@@ -15,9 +15,12 @@
     font-size: 64px;
   }
   @include mq(md){
-    font-size: 48px;
-    top: 60vw;
-    left: 53vw;
+    font-size: 56px;
+    top: 36vw;
+    left: 64vw;
+  }
+  @include mq(sm){
+    
     color: #444;
     mix-blend-mode: normal;
     background-color: transparent;

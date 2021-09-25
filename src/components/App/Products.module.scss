@@ -16,7 +16,7 @@
   }
 }
 .wrapper {
-  margin: 64vw 20px 10vw 20px;
+  margin: 56vw 20px 10vw 20px;
   @include mq(sm){
     margin: 70vw 20px 10vw 2vw;
   }
@@ -24,7 +24,7 @@
 
 .subtitle {
   color: #444;
-  font-size: 14px;
+  font-size: $text-base;
   margin: 0px 0px 0px 5px;
   @include mq(sm){
     margin: 0px 0px 0px 0px;

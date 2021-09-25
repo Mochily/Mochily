@@ -6,10 +6,10 @@ import * as styles from "./Footer.module.scss"
 const Footer = props => {
   const { footerMenu } = useSiteMetadata()
 
-  const menu = footerMenu.map(item => {
+  const menu = footerMenu.map((item, index) => {
     const page_link = item.slug
     return (
-      <li className={styles.li} key={page_link}>
+      <li className={styles.li} key={index}>
         <Link to={page_link}>{item.name}</Link>
       </li>
     )

@@ -2,6 +2,7 @@
 
 .footer {
   display: flex;
+  padding: 18px 0px;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
@@ -9,9 +10,13 @@
 
 .copy {
   color: white;
+  margin-left:40px;
 }
 
 .ul {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   .li {

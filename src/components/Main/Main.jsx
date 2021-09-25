@@ -1,8 +1,8 @@
 import React from "react"
 import * as styles from "./Main.module.scss"
-import Fluid from "../../components/Animation/Fluid"
-import FluidImg from "../../components/Animation/FluidImg"
-import Logo from "../../components/Animation/Logo"
+import Fluid from "./Fluid/Fluid"
+import FluidImg from "./Fluid/FluidImg"
+import Logo from "./Fluid/Logo"
 
 //トップページのMainビュー
 const Main = () => {

@@ -8,7 +8,7 @@ const FluidImg = () =>{
   return (
     <div>
       <StaticImage
-      src="../../images/pc.jpg"
+      src="../../../images/pc.jpg"
       alt="Mochily"
       className={styles.fluidpic}
       />

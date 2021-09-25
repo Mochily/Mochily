@@ -1,10 +1,14 @@
 @import "typography.scss";
 
 // global css
+html { 
+  background-color: #fff;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Volte", "M PLUS 1p", sans-serif;
-  background-color: white;
+  background-color: #fff;
 }
 
 // にじみ防止

@@ -37,9 +37,13 @@ h1 {
 .mock {
   width: 32vw;
   height: 32vw;
+  object-fit: cover;
+  object-position: 50% 0;
   @include mq(md){
     width: 50vw;
     height: 50vw;
+    object-fit: cover;
+    object-position: 50% 0;
   }
   @include mq(sm){
     width: 100%;
@@ -59,8 +63,36 @@ h1 {
   }
 }
 
+.flexEven {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-bottom: 200px;
+  justify-content: center;
+  @include mq(sm){
+    flex-direction: column;
+  }
+}
+
 .left {
   width: 600px;
+  @include mq(lg){
+    width: 50vw;
+  }
+  @include mq(md){
+    width: 40vw;
+    
+  }
+  @include mq(sm){
+    margin-right: 0;
+    margin-left: 3vw;
+    width: 50%;
+    order: 2;
+  }
+}
+
+.leftEven {
+  width: 450px;
+  margin-left: 5vw;
   @include mq(lg){
     width: 50vw;
   }
@@ -86,6 +118,11 @@ h1 {
     max-height: 3rem;
     margin-top: 0.5rem;
     width: 40vw;
+  }
+  @include mq(sm){
+    max-height: 3rem;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 }
 
