@@ -16,7 +16,13 @@
   color: black;
   animation: fluidrotate 30s ease 0s infinite;
   @include mq(sm){
-    display: none;
+    transform: scale(-1, 1);
+    top: 10vh;
+    left: -20vw;
+    //横幅
+    width: 86vw;
+    //縦幅
+    height: 60vw;
   }
 }
 

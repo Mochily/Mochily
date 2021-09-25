@@ -1,11 +1,20 @@
 @import "../../styles/assets.scss";
 
 .footer {
+  position: absolute;
+  margin-top: 80px;
+  width: 100vw;
   display: flex;
   padding: 18px 0px;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
+  @include mq(xl){
+    margin-top: 80px;
+  }
+  @include mq(lg){
+    margin-top: 30px;
+  }
 }
 
 .copy {

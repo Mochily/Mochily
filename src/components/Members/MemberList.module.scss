@@ -11,7 +11,7 @@
 }
 
 .cardContainer {
-  margin: 48vw 24px 24px 24px;
+  margin: 24px 24px 24px 24px;
   @include mq(xl) {
     margin-right: 8px;
     margin-left: 8px;
@@ -21,7 +21,6 @@
     margin-left: 24px;
   }
   @include mq(md) {
-    margin-top: 50vw;
     margin-right: 8px;
     margin-left: 8px;
   }

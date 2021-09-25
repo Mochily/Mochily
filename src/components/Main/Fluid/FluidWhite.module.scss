@@ -4,8 +4,10 @@
   font-size: 72px;
   position: absolute;
   z-index: 998;
+  //位置
   top: 16vh;
   right: 10vw;
+  //縦横幅
   width: 34vw;
   height: 32vw;
   background-color:rgba(255, 255, 255, 0);
@@ -16,7 +18,16 @@
     font-size: 56px;
   }
   @include mq(md){
-    font-size: 35px
+    font-size: 35px;
+  }
+  @include mq(sm){
+    font-size: 48px;
+    //位置
+    top: 12vh;
+    right: 16px;
+    //縦横幅
+    width: 72vw;
+    height: 64vw;
   }
 }
 
@@ -30,38 +41,73 @@
   margin-top: 15px;
 }
 .m{
+  animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
   color: #ff8c49;
   top: 12vw;
-  left: 5vw;;
+  left: 5vw;
+  @include mq(sm){
+    top: 20vw;
+    right: 16vw;
+  }
 }
 
 .o{
+  animation: fuwafuwa 2s infinite ease-in-out .8s alternate;
   top: 12vw;
   left: 17vw;
+  @include mq(sm){
+    top: 24vw;
+    left: 32vw;
+  }
 }
 
 .c{
+  animation: fuwafuwa 2s infinite ease-in-out .6s alternate;
   top: 20vw;
   left: 7vw;
+  @include mq(sm){
+    top: 34vw;
+    left: 16vw;
+  }
 }
 
 .h{
+  animation: fuwafuwa 3s infinite ease-in-out .6s alternate;
   top: 15vw;
   left: 26vw;
+  @include mq(sm){
+    top: 24vw;
+    left: 56vw;
+  }
 }
 
 .i{
+  animation: fuwafuwa 2s infinite ease-in-out .5s alternate;
   top: 4vw;
   left: 13vw;
+  @include mq(sm){
+    top: 8vw;
+    left: 24vw;
+  }
 }
 .y{
+  animation: fuwafuwa 3s infinite ease-in-out .5s alternate;
   top: 4vw;
   left: 23vw;
+  @include mq(sm){
+    top: 6vw;
+    left: 40vw;
+  }
 }
 
 .l{
+  animation: fuwafuwa 2s infinite ease-in-out .6s alternate;
   top: 21vw;
   left: 17vw;
+  @include mq(sm){
+    top: 37vw;
+    left: 48vw;
+  }
 }
 
 @keyframes fuwafuwa {

@@ -4,6 +4,7 @@ import useSiteMetadata from "../hooks/useSiteMetadata"
 
 import MemberList from "../components/Members/MemberList"
 import SubMain from "../components/Main/SubMain"
+import Box from "../components/Main/Box"
 
 const MembersPage = ({ data, location }) => {
   const { title } = useSiteMetadata
@@ -11,6 +12,7 @@ const MembersPage = ({ data, location }) => {
     <div>
       <Layout location={location} title={title}>
         <SubMain text="Members" subtext="メンバー紹介"/>
+        <Box />
         <MemberList />
       </Layout>
     </div>

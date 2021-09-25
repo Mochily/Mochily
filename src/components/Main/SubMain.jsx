@@ -8,7 +8,7 @@ import Heading from "./Fluid/Heading"
 //text subtextに見出し、小見出しを入れることで、ページに合わせたレイアウトに
 const SubMain = ({text, subtext}) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.hidden}>
       <div className={styles.flex}>
         <Heading text={text} subtext={subtext} />
         <FluidWhite />

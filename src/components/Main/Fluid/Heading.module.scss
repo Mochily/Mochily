@@ -1,10 +1,8 @@
 @import "../../../styles/assets.scss";
 
 .heading {
-  position: absolute;
+  position: relative;
   z-index: 999;
-  top: 25vw;
-  left: 20vw;
   font-size: 80px;
   font-weight: normal;
   color: #000000;
@@ -14,13 +12,31 @@
   @include mq(md){
     font-size: 48px;
   }
+  @include mq(md){
+    font-size: 48px;
+  }
 }
 .subheading {
-  position: absolute;
   z-index: 999;
-  top: 31vw;
-  left: 20.5vw;
+  width: 400px;
+  position: relative;
+  top: -16px;
+  left: 4px;
   font-size: $text-base;
   font-weight: normal;
   color: #000000;
+  @include mq(sm){
+    width: 200px;
+  }
+}
+
+.head{
+  position: absolute;
+  z-index: 999;
+  top: 25vw;
+  left: 18vw;
+  @include mq(sm){
+    top: 96vw;
+    left: 24px;
+  }
 }

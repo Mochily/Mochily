@@ -2,8 +2,9 @@
 //vwの単位で
 .fluidMin {
   position: absolute;
-  top: 21vw;
-  left: 13vw;
+  z-index: 1;
+  top: -3vw;
+  left: -3vw;
   //横幅
   width:17vw;
   //縦幅

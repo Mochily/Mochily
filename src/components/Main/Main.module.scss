@@ -18,3 +18,10 @@ img {
 .flex{
   display: flex;
 }
+
+.sm{
+  display: none;
+  @include mq(sm){
+    display: inline;
+  }
+}

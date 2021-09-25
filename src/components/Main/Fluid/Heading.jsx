@@ -7,7 +7,7 @@ import * as styles from "./Heading.module.scss"
 //text=見出し subtext=小見出し
 const Heading = ({text, subtext}) => {
   return (
-    <div>
+    <div className={styles.head}>
       <p className={styles.heading}>{text}</p>
       <p className={styles.subheading}>{subtext}</p>
       <FluidMin />

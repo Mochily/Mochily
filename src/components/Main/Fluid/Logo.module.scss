@@ -20,9 +20,8 @@
     left: 64vw;
   }
   @include mq(sm){
-    
-    color: #444;
-    mix-blend-mode: normal;
-    background-color: transparent;
+    font-size: 48px;
+    top: 56vw;
+    left: 48vw;
   }
 }

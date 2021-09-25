@@ -1,0 +1,14 @@
+@import "../../styles/assets.scss";
+
+.box{
+  height: 80vh;
+  @include mq(lg){
+    height: 64vh;
+  }
+  @include mq(md){
+    height: 48vh;
+  }
+  @include mq(sm){
+    height: 48vh;
+  }
+}
