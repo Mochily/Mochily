@@ -24,6 +24,7 @@ const siteMetadataQuery = graphql`
         }
         headerMenu {
           name
+          description
           slug
         }
         footerMenu {

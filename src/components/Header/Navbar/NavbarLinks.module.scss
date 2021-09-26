@@ -1,0 +1,52 @@
+@import "../../../styles/assets.scss";
+
+.navbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    top: 56px;
+    left: 0;
+  }
+}
+
+.navbox.close {
+  left: -100%;
+}
+
+.navitem {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin: 0 33px;
+  transition: all 200ms ease-in;
+  h2 {
+    font-size: $text-xl;
+    font-weight: 400;
+  }
+  p {
+    display: none;
+  }
+  @include mq(md) {
+    padding: 20px 0 0 30px;
+    width: 100%;
+    z-index: 6;
+    h2 {
+      font-size: 24px;
+      margin-right: 22px;
+    }
+    p {
+      display: block;
+      font-size: 14px;
+      color: #6C6C6C    
+    }
+  }
+}

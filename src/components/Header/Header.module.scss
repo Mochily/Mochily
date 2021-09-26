@@ -5,8 +5,12 @@
   top: 0px;
   text-align: center;
   padding: 8px 0 4px 0;
-  @include mq(sm){
+  z-index: 998;
+  @include mq(sm) {
     padding: 12px 0 8px 0;
+  }
+  @include mq(md) {
+    display: none;
   }
 }
 
