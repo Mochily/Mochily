@@ -11,7 +11,8 @@
   z-index: 999;
   @include mq(md) {
     display: flex;
-    position: sticky;
+    position: fixed;
+    background-color: #fff;
     top: 0;
     left: 0;
     right: 0;

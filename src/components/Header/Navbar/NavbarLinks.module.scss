@@ -8,8 +8,7 @@
     flex-direction: column;
     position: fixed;
     width: 100%;
-    justify-content: flex-start;
-    padding-top: 10vh;
+    padding: 43px 0 30px 0; 
     background-color: #fff;
     transition: all 0.3s ease-in;
     top: 56px;
@@ -18,7 +17,7 @@
 }
 
 .navbox.close {
-  left: -100%;
+  opacity: 0;
 }
 
 .navitem {
@@ -36,7 +35,7 @@
     display: none;
   }
   @include mq(md) {
-    padding: 0 0 20px 30px;
+    padding: 10px 0 10px 30px;
     width: 100%;
     z-index: 6;
     h2 {

@@ -8,7 +8,6 @@ const NavbarLinks = ({ isOpen }) => {
 
   const links = headerMenu.map((item, index) => {
     const link = item.slug
-    console.log(item.description)
     return (
       <Link to={link} key={index} className={styles.navitem}>
         <h2>{item.name}</h2>
