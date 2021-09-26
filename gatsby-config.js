@@ -45,7 +45,7 @@ module.exports = {
     footerMenu: [
       {
         name: "サイトマップ",
-        slug: "/about",
+        slug: "/",
       },
       {
         name: "お問い合わせ",
