@@ -3,12 +3,12 @@
 .box{
   height: 80vh;
   @include mq(lg){
-    height: 64vh;
+    height: 40vh;
   }
   @include mq(md){
-    height: 48vh;
+    height: 55vh;
   }
   @include mq(sm){
-    height: 48vh;
+    height: 70vh;
   }
 }
