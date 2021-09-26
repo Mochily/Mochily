@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
 import Button from "../Button/Button.jsx"
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "./App.module.scss"
 
 const FirstApp = ({ flug }) => {
-  const isOdd = flug;
-  const catchCopy = "かんたん時間割アプリ";
-  const description = "簡単に登録できるシンプルな時間割アプリです。";
-  const appName = "Timetable(仮)";
+  const isOdd = flug
+  const catchCopy = "かんたん時間割アプリ"
+  const description = "簡単に登録できるシンプルな時間割アプリです。"
+  const appName = "Timetable(仮)"
 
   // const appInfo = [
   //   {
@@ -39,27 +39,27 @@ const FirstApp = ({ flug }) => {
   //   }
   // ]
 
-  if(isOdd){
+  if (isOdd) {
     return (
       <section className={styles.flex}>
         <div className={styles.left}>
-        <StaticImage
-          src="../../images/icon.png"
-          alt="icon"
-          className={styles.icon}
+          <StaticImage
+            src="../../images/icon.png"
+            alt="icon"
+            className={styles.icon}
           />
           <p>
             <span className={styles.catchCopy}>{catchCopy}</span>
           </p>
           <h2 className={styles.appName}>{appName}</h2>
           <p className={styles.description}>{description}</p>
-          <Button url="/about/"/>
+          <Button url="/about/" />
         </div>
         <div className={styles.right}>
-        <StaticImage
-          src="../../images/mock-1.png"
-          alt="timetable-mock-img"
-          className={styles.mock}
+          <StaticImage
+            src="../../images/mock-1.png"
+            alt="timetable-mock-img"
+            className={styles.mock}
           />
         </div>
       </section>
@@ -68,23 +68,23 @@ const FirstApp = ({ flug }) => {
     return (
       <section className={styles.flexEven}>
         <div className={styles.leftEven}>
-        <StaticImage
-          src="../../images/icon.png"
-          alt="icon"
-          className={styles.icon}
+          <StaticImage
+            src="../../images/icon.png"
+            alt="icon"
+            className={styles.icon}
           />
           <p>
             <span className={styles.catchCopy}>{catchCopy}</span>
           </p>
           <h2 className={styles.appName}>{appName}</h2>
           <p className={styles.description}>{description}</p>
-          <Button url="/"/>
+          <Button url="/" />
         </div>
         <div className={styles.right}>
-        <StaticImage
-          src="../../images/mock-1.png"
-          alt="timetable-mock-img"
-          className={styles.mock}
+          <StaticImage
+            src="../../images/mock-1.png"
+            alt="timetable-mock-img"
+            className={styles.mock}
           />
         </div>
       </section>
@@ -93,4 +93,3 @@ const FirstApp = ({ flug }) => {
 }
 
 export default FirstApp
-

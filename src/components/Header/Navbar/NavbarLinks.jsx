@@ -3,8 +3,6 @@ import * as styles from "./NavbarLinks.module.scss"
 import useSiteMetadata from "../../../hooks/useSiteMetadata"
 import { Link } from "gatsby"
 
-import Container from "../../Container/Container"
-
 const NavbarLinks = ({ isOpen }) => {
   const { headerMenu } = useSiteMetadata()
 
@@ -20,11 +18,7 @@ const NavbarLinks = ({ isOpen }) => {
   })
 
   if (isOpen) {
-    return (
-      <div className={styles.navbox}>
-        {links}
-      </div>
-    )
+    return <div className={styles.navbox}>{links}</div>
   } else {
     return <div className={`${styles.navbox} ${styles.close}`}>{links}</div>
   }

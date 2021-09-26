@@ -9,7 +9,7 @@ const ContactPage = ({ data, location }) => {
   return (
     <div>
       <Layout location={location} title={title}>
-          <SubMain text="Contact" subtext="お問い合わせ"/>
+        <SubMain text="Contact" subtext="お問い合わせ" />
       </Layout>
     </div>
   )

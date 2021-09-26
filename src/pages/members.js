@@ -11,7 +11,7 @@ const MembersPage = ({ data, location }) => {
   return (
     <div>
       <Layout location={location} title={title}>
-        <SubMain text="Members" subtext="メンバー紹介"/>
+        <SubMain text="Members" subtext="メンバー紹介" />
         <Box />
         <MemberList />
       </Layout>

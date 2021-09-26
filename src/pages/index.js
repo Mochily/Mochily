@@ -10,13 +10,13 @@ import Container from "../components/Container/Container"
 
 const Index = ({ data, location }) => {
   const { title } = useSiteMetadata
-  
+
   return (
     <Layout location={location} title={title}>
       <Main />
       <Container>
         <Products />
-        <FirstApp flug={true}/>
+        <FirstApp flug={true} />
         <FirstApp flug={false} />
       </Container>
     </Layout>

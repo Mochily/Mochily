@@ -8,7 +8,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 5vw;
-  z-index: 2;
+  z-index: 999;
   @include mq(md) {
     display: flex;
     position: sticky;

@@ -8,7 +8,7 @@
     flex-direction: column;
     position: fixed;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 10vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
@@ -36,7 +36,7 @@
     display: none;
   }
   @include mq(md) {
-    padding: 20px 0 0 30px;
+    padding: 0 0 20px 30px;
     width: 100%;
     z-index: 6;
     h2 {

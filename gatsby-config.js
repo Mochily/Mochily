@@ -108,7 +108,7 @@ module.exports = {
     //   options: {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
-   // },
+    // },
     // {
     //   resolve: `gatsby-plugin-feed`,
     //   options: {

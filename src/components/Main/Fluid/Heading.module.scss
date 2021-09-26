@@ -2,7 +2,7 @@
 
 .heading {
   position: relative;
-  z-index: 999;
+  z-index: 998;
   font-size: 80px;
   font-weight: normal;
   color: #000000;
@@ -17,7 +17,7 @@
   }
 }
 .subheading {
-  z-index: 999;
+  z-index: 998;
   width: 400px;
   position: relative;
   top: -16px;
@@ -32,7 +32,7 @@
 
 .head{
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   top: 25vw;
   left: 18vw;
   @include mq(sm){

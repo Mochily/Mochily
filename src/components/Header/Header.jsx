@@ -7,14 +7,14 @@ import Navbar from "../Header/Navbar/Navbar"
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <div className={styles.heading}>
         <Link to="/" className={styles.link}>
           Mochily
         </Link>
       </div>
       <Navbar />
-    </div>
+    </header>
   )
 }
 

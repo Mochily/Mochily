@@ -9,7 +9,7 @@ const ProductsPage = ({ data, location }) => {
   return (
     <div>
       <Layout location={location} title={title}>
-        <SubMain text="Products" subtext="これまでの制作物"/>
+        <SubMain text="Products" subtext="これまでの制作物" />
       </Layout>
     </div>
   )
