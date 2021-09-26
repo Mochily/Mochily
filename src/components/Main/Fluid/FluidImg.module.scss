@@ -12,7 +12,7 @@
   max-height: 100vh;
   animation: fluidrotate 30s ease 0s infinite;
   @include mq(sm){
-    display: none;
+    display: none !important;
     top: 15vw;
     left: -20vw;
     //横幅
