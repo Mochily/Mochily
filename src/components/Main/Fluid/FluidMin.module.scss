@@ -3,12 +3,12 @@
 .fluidMin {
   position: absolute;
   z-index: 1;
-  top: -3vw;
-  left: -3vw;
+  top: -30px;
+  left: -30px;
   //横幅
-  width:17vw;
+  width:160px;
   //縦幅
-  height: 17vw;
+  height: 160px;
   //背景色
   background:#ff8c49;
   animation: fluidrotate 30s ease 0s infinite;

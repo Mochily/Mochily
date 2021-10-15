@@ -7,6 +7,7 @@ import FirstApp from "../components/App/FirstApp"
 import Products from "../components/App/Products"
 import Main from "../components/Main/Main"
 import Container from "../components/Container/Container"
+import AppImg from "../components/App/AppImg"
 
 const Index = ({ data, location }) => {
   const { title } = useSiteMetadata

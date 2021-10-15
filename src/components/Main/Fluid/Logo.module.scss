@@ -2,9 +2,8 @@
 
 .logo {
   position: absolute;
-  z-index: 998;
-  top: 30vw;
-  left: 65vw;
+  top: 380px;
+  right: 100px;
   font-size: 80px;
   font-weight: normal;
   color: white;
@@ -12,16 +11,17 @@
   //これで反転
   mix-blend-mode: exclusion;
   @include mq(lg){
+    top: 320px;
+    right: 100px;
     font-size: 64px;
   }
   @include mq(md){
-    font-size: 56px;
-    top: 36vw;
-    left: 64vw;
+    font-size: 48px;
+    top: 280px;
   }
   @include mq(sm){
-    font-size: 48px;
-    top: 56vw;
-    left: 48vw;
+    font-size: 40px;
+    top: 300px;
+    left: 200px;
   }
 }

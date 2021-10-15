@@ -1,28 +1,39 @@
 @import "../../../styles/assets.scss";
 
-//必ずvwの単位でよろしくです
 .fluid {
   position: absolute;
-  z-index: 997;
   overflow-x: hidden;
-  top: 10vh;
-  right: -20vw;
-  //横幅
-  width: 48vw;
-  //縦幅
-  height: 40vw;
+  top: 60px;
+  right: -300px;
+  //横幅48vw
+  width: 620px;
+  //縦幅40vw
+  height: 520px;
   //背景色
   background-color:black;
   color: black;
   animation: fluidrotate 30s ease 0s infinite;
+  @include mq(lg){
+    right: -150px;
+    width: 420px;
+    height: 420px;
+  }
+  @include mq(md){
+    top: 90px;
+    right: -120px;
+    width: 320px;
+    height: 320px;
+  }
   @include mq(sm){
     transform: scale(-1, 1);
-    top: 10vh;
-    left: -20vw;
+    top: 60px;
+    left: -100px;
     //横幅
-    width: 86vw;
+    width: 380px;
     //縦幅
-    height: 60vw;
+    height: 270px;
+    background-color: #fff;
+    border: black solid 2px;
   }
 }
 

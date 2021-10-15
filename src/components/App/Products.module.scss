@@ -16,12 +16,15 @@
   }
 }
 .wrapper {
-  margin: 56vw 20px 10vw 20px;
+  margin: 700px 20px 10vw 20px;
+  @include mq(lg){
+    margin-top: 600px;
+  }
   @include mq(md){
-    margin-top: 60vw;
+    margin-top: 500px;
   }
   @include mq(sm){
-    margin: 85vw 20px 10vw 2vw;
+    margin: 390px 20px 10vw 2vw;
   }
 }
 

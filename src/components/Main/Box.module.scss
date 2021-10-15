@@ -1,7 +1,7 @@
 @import "../../styles/assets.scss";
 
 .box{
-  height: 80vh;
+  height: 900px;
   @include mq(lg){
     height: 40vh;
   }

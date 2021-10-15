@@ -3,22 +3,26 @@
 //必ずvwの単位で
 .fluidpic {
   position: absolute;
-  top: 5vh;
-  left: -30vw;
-  //横幅
-  width: 77vw;
-  //縦幅
-  height: 50vw;
+  top: 50px;
+  left: -260px;
+  //横幅77vw
+  width: 940px;
+  //縦幅50vw
+  height: 610px;
   max-height: 100vh;
   animation: fluidrotate 30s ease 0s infinite;
+  @include mq(lg){
+    left: -200px;
+    width: 700px;
+    height: 460px;
+  }
+  @include mq(md){
+    left: -170px;
+    width: 540px;
+    height: 410px;
+  }
   @include mq(sm){
     display: none !important;
-    top: 15vw;
-    left: -20vw;
-    //横幅
-    width: 86vw;
-    //縦幅
-    height: 60vw;
   }
 }
 

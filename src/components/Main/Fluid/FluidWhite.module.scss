@@ -1,21 +1,24 @@
 @import "../../../styles/assets.scss";
 //あとでフォントサイズチェック
 .fluidwhite {
-  font-size: 72px;
+  font-size: 64px;
   position: absolute;
   z-index: 997;
   //位置
-  top: 16vh;
-  right: 10vw;
+  top: 100px;
+  right: 200px;
   //縦横幅
-  width: 34vw;
-  height: 32vw;
+  width: 420px;
+  height: 400px;
   background-color:rgba(255, 255, 255, 0);
   color: black;
   border: solid 1px #444;
   animation: fluidrotate 30s ease 0s infinite;
   @include mq(lg){
     font-size: 56px;
+    width: 320px;
+  height: 300px;
+    right: 100px
   }
   @include mq(md){
     font-size: 35px;
@@ -43,8 +46,8 @@
 .m{
   animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
   color: #ff8c49;
-  top: 12vw;
-  left: 5vw;
+  top: 120px;
+  left: 50px;
   @include mq(sm){
     top: 20vw;
     right: 16vw;
@@ -53,8 +56,8 @@
 
 .o{
   animation: fuwafuwa 2s infinite ease-in-out .8s alternate;
-  top: 12vw;
-  left: 17vw;
+  top: 120px;
+  left: 190px;
   @include mq(sm){
     top: 24vw;
     left: 32vw;
@@ -63,8 +66,8 @@
 
 .c{
   animation: fuwafuwa 2s infinite ease-in-out .6s alternate;
-  top: 20vw;
-  left: 7vw;
+  top: 230px;
+  left: 100px;
   @include mq(sm){
     top: 34vw;
     left: 16vw;
@@ -73,8 +76,8 @@
 
 .h{
   animation: fuwafuwa 3s infinite ease-in-out .6s alternate;
-  top: 15vw;
-  left: 26vw;
+  top: 150px;
+  left: 310px;
   @include mq(sm){
     top: 24vw;
     left: 56vw;
@@ -83,8 +86,8 @@
 
 .i{
   animation: fuwafuwa 2s infinite ease-in-out .5s alternate;
-  top: 4vw;
-  left: 13vw;
+  top: 40px;
+  left: 130px;
   @include mq(sm){
     top: 8vw;
     left: 24vw;
@@ -92,8 +95,8 @@
 }
 .y{
   animation: fuwafuwa 3s infinite ease-in-out .5s alternate;
-  top: 4vw;
-  left: 23vw;
+  top: 40px;
+  left: 260px;
   @include mq(sm){
     top: 6vw;
     left: 40vw;
@@ -102,8 +105,8 @@
 
 .l{
   animation: fuwafuwa 2s infinite ease-in-out .6s alternate;
-  top: 21vw;
-  left: 17vw;
+  top: 250px;
+  left: 280px;
   @include mq(sm){
     top: 37vw;
     left: 48vw;

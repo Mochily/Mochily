@@ -9,11 +9,9 @@ import Logo from "./Fluid/Logo"
 const Main = () => {
   return (
     <div>
+      <Fluid />
+      <FluidImg />
       <Logo />
-      <div className={styles.flex}>
-        <Fluid />
-        <FluidImg />
-      </div>
     </div>
   )
 }
