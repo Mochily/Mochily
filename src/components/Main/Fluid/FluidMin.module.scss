@@ -12,6 +12,14 @@
   //背景色
   background:#ff8c49;
   animation: fluidrotate 30s ease 0s infinite;
+} @include mq(lg){
+
+}
+@include mq(md){
+
+}
+@include mq(sm){
+  top:30px;
 }
 
 @keyframes fluidrotate {  
