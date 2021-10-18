@@ -16,10 +16,11 @@
 
 }
 @include mq(md){
-
+  top:30px;
+  left: -60px;
 }
 @include mq(sm){
-  top:30px;
+  
 }
 
 @keyframes fluidrotate {  
