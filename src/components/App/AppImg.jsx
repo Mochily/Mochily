@@ -1,7 +1,7 @@
 import React from "react"
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 const AppImg = ({ data }) => {
   const image = getImage(data.imageSharp)
@@ -15,13 +15,13 @@ const AppImg = ({ data }) => {
 export default AppImg
 
 export const imgQuery = graphql`
-query MyQuery {
-  imageSharp{
-		gatsbyImageData
-    (
-       width: 200
-       placeholder: BLURRED
-       formats: [AUTO, WEBP, AVIF]
-    )
+  query MyQuery {
+    imageSharp {
+      gatsbyImageData(
+        width: 200
+        placeholder: BLURRED
+        formats: [AUTO, WEBP, AVIF]
+      )
+    }
   }
-}`
+`

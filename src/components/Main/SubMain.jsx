@@ -10,8 +10,8 @@ import Container from "../Container/Container"
 const SubMain = ({ text, subtext }) => {
   return (
     <div className={styles.hidden}>
-        <Heading text={text} subtext={subtext} />
-        <FluidWhite />
+      <Heading text={text} subtext={subtext} />
+      <FluidWhite />
     </div>
   )
 }
